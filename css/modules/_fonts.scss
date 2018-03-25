@@ -1,0 +1,52 @@
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url(../fonts/Montserrat-Light.otf);
+
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(../fonts/Montserrat-Regular.otf);
+
+}
+
+ @font-face {
+  font-family: "Lato Light";
+  src: url(../fonts/Lato-Light.ttf);
+
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+
+}
+
+h1,h2,h3,h4,h5,h6,a,span {
+  font-family: "Montserrat Light", sans-serif
+}
+
+p {
+  font-family: "Lato Light", sans-serif
+}
+
+p, .paragraph-1 {
+  font-size: 0.8em;
+}
+
+.paragraph-1-2, .header-1 {
+  text-align: center;
+}
+
+.paragraph-4 {
+  font-weight: bold;
+}
+
+.white {
+  color: $white;
+}
+
+p>span, h6 {
+  color: $copper;
+}

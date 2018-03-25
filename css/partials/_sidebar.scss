@@ -1,0 +1,179 @@
+
+.sidebar {
+  @include border-radius(0.125rem);
+  background: linear-gradient(to left, #E8E8E8, $white, #E8E8E8);
+  margin-right: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.img-section {
+  position: relative;
+  background: $white;
+}
+
+.img-section img {
+  max-width: 100%;
+}
+
+.name {
+  color: black;
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.skills, .languages {
+  margin-left: 10%;
+}
+
+.level-background {
+  @include border-radius(0.625rem);
+  background-color: white;
+  width: 90%;
+  height: 1.1rem;
+  z-index: 99;
+}
+
+.level {
+  @include border-radius(0.625rem);
+  @include transition(width 2s);
+  background-color: #048A81;
+  background: linear-gradient(to bottom, rgba(4,138,129,0.4), rgba(4,138,129,1),rgba(4,138,129,0.4));
+  height: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  margin-left: 50%;
+  font-size: 12px;
+}
+
+#level-1 {
+  -webkit-animation: slide-1 4s;
+   animation: slide-1 4s;
+   width: 60%;
+}
+
+#level-2 {
+  -webkit-animation: slide-2 4s;
+  animation: slide-2 4s;
+  width: 60%;
+}
+
+#level-3 {
+  -webkit-animation: slide-3 4s;
+  animation: slide-3 4s;
+  width: 60%;
+}
+
+#level-4 {
+  -webkit-animation: slide-4 4s;
+  animation: slide-4 4s;
+  width: 70%;
+}
+
+#level-5 {
+  -webkit-animation: slide-5 4s;
+  animation: slide-5 4s;
+  width: 100%;
+}
+
+#level-6 {
+  -webkit-animation: slide-6 4s;
+  animation: slide-6 4s;
+  width: 100%;
+}
+
+#level-7 {
+  -webkit-animation: slide-7 4s;
+  animation: slide-7 4s;
+  width: 70%;
+}
+
+@keyframes slide-1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes slide-2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes slide-3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes slide-4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes slide-5 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slide-6 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slide-7 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+//For small screens
+
+@media screen and (max-width: 767px){
+  .sidebar {
+    width: 100%;
+    margin-right: 0rem;
+  }
+}

@@ -1,0 +1,99 @@
+
+ @media screen and (max-width: 768px) {
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .card-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+ }
+
+
+/* @media screen and (min-width: 767px){ */
+
+  .card-container {
+    margin-top: 3.125rem;
+  }
+
+  .card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3.125rem;
+  }
+
+  .card {
+    position: relative;
+    background-color: $white;
+    @include border-radius(0.25rem);
+    width: 18.75rem;
+    height: 12.5rem;
+    margin-left: 0.3125rem;
+    margin-right: 0.3125rem;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    @include border-radius(0.25rem);
+  }
+ 
+  .cover {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card-title {
+    text-align: center;
+    font-weight: bold;
+    color: $copper;
+  }
+
+  .paragraph-2 {
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .black {
+    color: black;
+  }
+ 
+  .hidden>div {
+    display:none;
+  }
+
+  .hover-effect>img {
+    @include border-radius(0.25rem);
+    filter: blur(3px);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  .button-link {
+    height: 1.875rem;
+    width: 1.875rem; 
+    float: right;
+  }
+
+  .button-link i {
+    font-size: 36px;
+  }
+  
+
+/* } */

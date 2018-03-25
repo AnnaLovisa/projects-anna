@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Showcase</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div class="hamburger-menu">
+            <ul class="hamburger-menu-list" onclick="closeNav()">
+                <li><a href="index.html">Home</a></li>
+                <li><a style="color: black" href="project.html">Projects</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div>
+        
+            <div id="hamburger" class="hamburger-icon-wrapper">
+                <span class="hamburger-icon"></span>
+            </div>
+
+      <!-- Overall container -->
+      <container class="container-1">
+        <container class="container-2">
+        <!-- Left column -->
+        <sidebar class="sidebar shadow-style">
+          <section class="contact-skills-section">
+            <section class="contact">
+              <h3 class="name">Anna Gribbe</h3> 
+              <p class="paragraph-1"><i class="fa fa-briefcase"></i> Front End Developer</p>
+              <p class="paragraph-1"><i class="fa fa-home"></i> Stockholm, Sweden</p>
+              <p class="paragraph-1"><i class="fa fa-envelope"></i> gribbe.anna@gmail.com</p>
+              <p class="paragraph-1"><i class="fa fa-phone"></i> 073 53 55 759</p>
+            </section>
+            <hr>
+            <section class="skills">
+              <h3 class="skills-title"><i class="fa fa-asterisk"></i> Skills</h3>
+              <p class="paragraph-1">JavaScript</p>
+              <div class="level-background">
+                  <div class="level" id="level-1"><span class="count">60</span>%</div>
+              </div>
+              <p class="paragraph-1">React</p>
+              <div class="level-background">
+                  <div class="level" id="level-2"><span class="count">60</span>%</div>
+              </div>
+              <p class="paragraph-1">CSS/SASS</p>
+              <div class="level-background">
+                  <div class="level" id="level-3"><span class="count">60</span>%</div>
+              </div>
+              <p class="paragraph-1">Bootstrap</p>
+              <div class="level-background">
+                  <div class="level" id="level-4"><span class="count">70</span>%</div>
+              </div>
+            </section>
+            <hr>
+            <section class="languages">
+                <h3 class="skills-title"><i class="fa fa-globe"></i> Languages</h3>
+                <p class="paragraph-1">Swedish</p>
+                <div class="level-background">
+                    <div class="level" id="level-5"><span class="count">100</span>%</div>
+                </div>
+                <p class="paragraph-1">English</p>
+                <div class="level-background">
+                    <div class="level" id="level-6"><span class="count">100</span>%</div>
+                </div>
+                <p class="paragraph-1">German</p>
+                <div class="level-background">
+                    <div class="level" id="level-7"><span class="count">70</span>%</div>
+                </div>
+                <hr>
+            </section>
+          </section>
+
+        </sidebar>
+      
+        <section class="section-1">
+          <nav class="navigation shadow-style">
+              <ul class="ul-navigation">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a style="color: black" href="project.html">Projects</a></li>
+                  <li><a href="cv.html">CV</a></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+          </nav>
+          <!-- Right Column -->
+          <section class="section-2 shadow-style">
+                <h3 class="work-title"><i class="fa fa-suitcase"></i> Projects</h3>
+            <div class="card-container">
+              <hr>
+              <div class="card-section">
+                  <div id="card-id" class="card shadow-style">
+                      <img class="card-class" src="img/sand-project.jpg" alt="sand project" />
+                      <div id="cover-id" class="cover">
+                          <h3 class="card-title">Sand</h3>
+                          <p class="paragraph-2">Ett grupparbete där vi skapade en webbsida i HTML och CSS. Uppdraget var att göra en responsiv sida
+                              dels med egen CSS, dels med Bootstrap.</p>
+                          <a href="http://annagribbe.se/SAND-project-HTML-CSS/" class="button-link"><i class="fa fa-angle-right black"></i></a>                        
+                      </div>
+                  </div>
+                  <div id="card-id" class="card shadow-style">
+                        <img src="img/smt-project.png" alt="salary project" />
+                        <div id="cover-id" class="cover">
+                            <h3 class="card-title">Salary Management Tool</h3>
+                            <p class="paragraph-2">Project from my first traineeship to support HR-department in salary management.
+                                Built with React, Redux, CSS/SASS, ExpressJS and Node.js.
+                            </p>
+                        </div>
+                  </div>
+              </div>
+              <hr>
+              <div class="card-section">
+                    <div class="card shadow-style">
+                        <img src="img/worst-taco-project.jpg" alt="worst taco project" />
+                        <div class="cover">
+                            <h3 class="card-title">Worst Taco Project</h3>
+                            <p class="paragraph-2">Application for Taco-fans that can create their own account, create their own worst
+                                taco combi, read and vote for other users combis. Built with React that fetch and stores data in Firebase.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow-style">
+                            <img src="img/php-project.jpg" alt="php project" />
+                            <div class="cover">
+                                <h3 class="card-title">Blog</h3>
+                                <p class="paragraph-2">Group assignment to create a simpler CMS in PHP, MySQL and Bootstrap.
+                                </p>
+                            </div>
+                    </div>
+              </div>
+              <hr>
+              <div class="card-section">
+                    <div class="card shadow-style">
+                            <img src="img/researchersdb-project.jpg" alt="researchersdb project" />
+                            <div class="cover">
+                                <h3 class="card-title">Researchers Database</h3>
+                                <p class="paragraph-2">Project for organisation with purpose to create an application that simplifies access to info about researchers.
+                                    Remade from VanillaJS with Revealing module pattern to React with Redux and CSS/SASS. 
+                                </p>
+                            </div>
+                    </div>
+                    <div class="card shadow-style">
+                            <img src="img/moviedb-project.jpg" alt="moviedb project" />
+                            <div class="cover">
+                                <h3 class="card-title">Movie Database</h3>
+                                <p class="paragraph-2 white">A smaller movie database built in JavaScript with use of design patterns. Data is
+                                    fetched from a local JSON-file with Ajax-calls.</p>
+                                <a href="http://annagribbe.se/Movie-Database/" class="button-link"><i class="fa fa-angle-right white"></i></a>
+                            </div>
+                    </div>
+              </div>
+              <hr>
+              <div class="card-section">
+                <div class="card shadow-style">
+                        <img src="img/todo-project.jpg" alt="todo project" />
+                        <div class="cover">
+                            <h3 class="card-title">ToDo List</h3>
+                            <p class="paragraph-2 white">A simpler Todo-list built in JavaScript, for user to add and delete HTML from the browser.</p>
+                            <a href="http://annagribbe.se/ToDo-list/" class="button-link"><i class="fa fa-angle-right white"></i></a>
+                        </div>
+                </div>
+                <div class="card shadow-style">
+                        <img src="img/food-project.jpg" alt="food project" />
+                        <div class="cover">
+                            <h3 class="card-title">Food Generator</h3>
+                            <p class="paragraph-2 white">A first small project that generate random food recipes for those without dinner ideas.
+                                Built in JavaScript and Bootstrap.
+                            </p>
+                            <a href="http://annagribbe.se/Food-Generator/" class="button-link"><i class="fa fa-angle-right white"></i></a>
+                        </div>
+                </div>
+            </div>
+            <hr>
+            </div>
+          </section>
+        </section>
+      </container>
+        <footer class="footer shadow-style">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <a href="https://www.facebook.com/anna.gribbe"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com/AnnaLovisa"><i class="fa fa-github"></i></a>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </footer>
+      </container>
+
+
+
+    <script src="js/main.js"></script>
+    
+  </body>
+  </html>

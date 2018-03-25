@@ -1,0 +1,20 @@
+.work-title {
+  margin-left: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.section-3 {
+  margin-left: 5%;
+}
+
+#presentation-container {
+  min-height: 100vh;
+}
+
+.bullet {
+  width: 0.25rem;
+  height: 0.25rem;
+  @include border-radius(3.125rem);
+  background: $mint;
+  margin-left: 50%;
+}

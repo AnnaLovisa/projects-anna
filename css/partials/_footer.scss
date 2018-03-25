@@ -1,0 +1,18 @@
+.footer {
+  @include border-radius(0.125rem);
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  height: 2.650rem;
+  background: $mint;
+  background: linear-gradient(to right, rgba(4,138,129,0.8), rgba(4,138,129,1),rgba(4,138,129,0.8));
+  margin-bottom: 0.3125rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+}
+
+.footer i {
+  color: $white;
+  font-size: 1.5rem;
+}
