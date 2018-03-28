@@ -433,7 +433,10 @@ p > span, h6 {
 @media screen and (max-width: 767px) {
   .sidebar {
     width: 100%;
-    margin-right: 0rem; } }
+    margin-right: 0rem;
+    flex: 0;
+    -webkit-flex: 0;
+    flex-shrink: 0; } }
 .footer {
   -webkit-border-radius: 0.125rem;
   -moz-border-radius: 0.125rem;

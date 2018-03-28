@@ -1,12 +1,32 @@
-html, body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif; }
+@font-face {
+  font-family: "Montserrat Light";
+  src: url(../fonts/Montserrat-Light.otf); }
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(../fonts/Montserrat-Regular.otf); }
+@font-face {
+  font-family: "Lato Light";
+  src: url(../fonts/Lato-Light.ttf); }
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf); }
+h1, h2, h3, h4, h5, h6, a, span {
+  font-family: "Montserrat Light", sans-serif; }
+
+p {
+  font-family: "Lato Light", sans-serif; }
 
 p, .paragraph-1 {
   font-size: 0.8em; }
 
-.paragraph-2 {
-  font-size: 0.8em;
+.paragraph-1-2, .header-1 {
+  text-align: center; }
+
+.paragraph-4 {
   font-weight: bold; }
+
+.white {
+  color: #FFFFFF; }
 
 p > span, h6 {
   color: #DB7F67; }
@@ -22,6 +42,19 @@ p > span, h6 {
 
 .section-3 {
   margin-left: 5%; }
+
+#presentation-container {
+  min-height: 100vh; }
+
+.bullet {
+  width: 0.25rem;
+  height: 0.25rem;
+  -webkit-border-radius: 3.125rem;
+  -moz-border-radius: 3.125rem;
+  -ms-border-radius: 3.125rem;
+  border-radius: 3.125rem;
+  background: #048A81;
+  margin-left: 50%; }
 
 @media screen and (max-width: 767px) {
   .navigation {
@@ -122,7 +155,7 @@ p > span, h6 {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     color: black;
     text-align: center;
     z-index: 99;
@@ -150,9 +183,13 @@ p > span, h6 {
     border-radius: 0.125rem;
     min-width: 100%;
     height: 4%;
-    background: #FFFFFF;
+    background: linear-gradient(to left, #E8E8E8, #FFFFFF, #E8E8E8);
     margin-left: 0.3125rem;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99; }
 
   .ul-navigation {
     list-style: none;
@@ -227,7 +264,16 @@ p > span, h6 {
   color: #DB7F67; }
 
 .paragraph-2 {
+  font-size: 0.8em;
   text-align: center;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem; }
+
+.white {
+  color: white; }
+
+.black {
   color: black; }
 
 .hidden > div {
@@ -248,7 +294,6 @@ p > span, h6 {
   float: right; }
 
 .button-link i {
-  color: black;
   font-size: 36px; }
 
 /* } */
@@ -257,7 +302,7 @@ p > span, h6 {
   -moz-border-radius: 0.125rem;
   -ms-border-radius: 0.125rem;
   border-radius: 0.125rem;
-  background: #FFFFFF;
+  background: linear-gradient(to left, #E8E8E8, #FFFFFF, #E8E8E8);
   margin-right: 0.3125rem;
   display: flex;
   flex-direction: column;
@@ -287,9 +332,10 @@ p > span, h6 {
   -moz-border-radius: 0.625rem;
   -ms-border-radius: 0.625rem;
   border-radius: 0.625rem;
-  background-color: #F2EEEB;
+  background-color: white;
   width: 90%;
-  height: 1.1rem; }
+  height: 1.1rem;
+  z-index: 99; }
 
 .level {
   -webkit-border-radius: 0.625rem;
@@ -299,15 +345,19 @@ p > span, h6 {
   transition: width 2s;
   -ms-transition: width 2s;
   background-color: #048A81;
-  height: 1.1rem; }
+  background: linear-gradient(to bottom, rgba(4, 138, 129, 0.4), #048a81, rgba(4, 138, 129, 0.4));
+  height: 1.1rem;
+  display: flex;
+  align-items: center; }
 
 .count {
-  margin-left: 50%; }
+  margin-left: 50%;
+  font-size: 12px; }
 
 #level-1 {
   -webkit-animation: slide-1 4s;
   animation: slide-1 4s;
-  width: 80%; }
+  width: 60%; }
 
 #level-2 {
   -webkit-animation: slide-2 4s;
@@ -317,12 +367,12 @@ p > span, h6 {
 #level-3 {
   -webkit-animation: slide-3 4s;
   animation: slide-3 4s;
-  width: 40%; }
+  width: 60%; }
 
 #level-4 {
   -webkit-animation: slide-4 4s;
   animation: slide-4 4s;
-  width: 90%; }
+  width: 70%; }
 
 #level-5 {
   -webkit-animation: slide-5 4s;
@@ -332,18 +382,18 @@ p > span, h6 {
 #level-6 {
   -webkit-animation: slide-6 4s;
   animation: slide-6 4s;
-  width: 50%; }
+  width: 100%; }
 
 #level-7 {
   -webkit-animation: slide-7 4s;
   animation: slide-7 4s;
-  width: 80%; }
+  width: 70%; }
 
 @keyframes slide-1 {
   from {
     width: 0%; }
   to {
-    width: 80%; } }
+    width: 60%; } }
 @keyframes slide-2 {
   from {
     width: 0%; }
@@ -353,12 +403,12 @@ p > span, h6 {
   from {
     width: 0%; }
   to {
-    width: 40%; } }
+    width: 60%; } }
 @keyframes slide-4 {
   from {
     width: 0%; }
   to {
-    width: 90%; } }
+    width: 70%; } }
 @keyframes slide-5 {
   from {
     width: 0%; }
@@ -368,12 +418,12 @@ p > span, h6 {
   from {
     width: 0%; }
   to {
-    width: 50%; } }
+    width: 100%; } }
 @keyframes slide-7 {
   from {
     width: 0%; }
   to {
-    width: 80%; } }
+    width: 70%; } }
 @media screen and (min-width: 768px) {
   .sidebar {
     align-self: flex-start;
@@ -395,6 +445,7 @@ p > span, h6 {
   align-items: center;
   height: 2.650rem;
   background: #048A81;
+  background: linear-gradient(to right, rgba(4, 138, 129, 0.8), #048a81, rgba(4, 138, 129, 0.8));
   margin-bottom: 0.3125rem;
   margin-left: 0.3125rem;
   margin-right: 0.3125rem; }
@@ -405,7 +456,7 @@ p > span, h6 {
 
 body {
   margin: 0;
-  background: #F2EEEB; }
+  background: white; }
 
 hr {
   width: 80%;
@@ -443,7 +494,11 @@ i {
   min-width: 100%;
   margin-left: 0.3125rem;
   margin-top: 0.3125rem;
-  background: linear-gradient(to right, #FFFFFF, #E8E8E8); }
+  background: linear-gradient(to left, #E8E8E8, #FFFFFF, #E8E8E8); }
+
+.section-2-1 {
+  padding: 5rem;
+  min-height: 900px; }
 
 .shadow-style {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

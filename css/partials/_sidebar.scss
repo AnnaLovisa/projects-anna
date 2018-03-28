@@ -1,7 +1,7 @@
 
 .sidebar {
   @include border-radius(0.125rem);
-  background: linear-gradient(to left, #E8E8E8, $white, #E8E8E8);
+  background: linear-gradient(to left, $lighter-grey, $white, $lighter-grey);
   margin-right: 0.3125rem;
   display: flex;
   flex-direction: column;
@@ -175,5 +175,8 @@
   .sidebar {
     width: 100%;
     margin-right: 0rem;
+    flex: 0;
+    -webkit-flex: 0;
+    flex-shrink: 0;
   }
 }
